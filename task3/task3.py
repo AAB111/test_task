@@ -12,6 +12,8 @@ def save_json(data, file_path):
 def create_values_dict(values):
     return {item['id']: item['value'] for item in values}
 
+#Используя массив как стек, ограничиваемся оперативной памятью, что позволит обработать большую вложенность
+#Если написать функцию через рекурсию, то упор идет в стек вызовов, который меньше объёма оперативной памяти
 def update_test_values(tests, values_dict):
     stack = tests.copy()
     

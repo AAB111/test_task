@@ -25,3 +25,4 @@ if __name__ == "__main__":
     result = min_moves_to_equal_elements(nums)
 
     print(result)
+    

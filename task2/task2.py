@@ -38,4 +38,3 @@ if __name__ == "__main__":
     
     for x, y in points:
         print(point_position(circle_x, circle_y, radius, x, y))
-
